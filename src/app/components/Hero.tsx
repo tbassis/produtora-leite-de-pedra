@@ -1,6 +1,6 @@
 
 import Image from 'next/image'
-import logo from '../logo-on-primary.png'
+import logo from '../logo-and-name-on-primary.png'
 
 export default function Hero() {
   return (
