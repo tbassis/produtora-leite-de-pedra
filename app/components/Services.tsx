@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/app/components/ui/Card'
 import { ListChecks, Blocks, Antenna, ChartNoAxesCombined } from 'lucide-react'
 
-const features = [
+const services = [
   {
     title: 'Consultoria',
     description: 'Analisamos o seu projeto e orientamos os ajustes necessários para alcançar os objetivos.',
@@ -24,19 +24,19 @@ const features = [
   },
 ]
 
-export default function Features() {
+export default function Services() {
   return (
-    <section id="features" className="py-20 px-6 md:px-10 lg:px-20 bg-white">
+    <section id="services" className="py-20 px-6 md:px-10 lg:px-20 bg-white">
       <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Nossos Serviços</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {features.map((feature, index) => (
+        {services.map((service, index) => (
           <Card key={index}>
             <CardHeader>
-              <feature.icon className="w-10 h-10 text-black mb-4" />
-              <CardTitle className='text-gray-800'>{feature.title}</CardTitle>
+              <service.icon className="w-10 h-10 text-black mb-4" />
+              <CardTitle className='text-gray-800'>{service.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className='text-gray-700'>{feature.description}</CardDescription>
+              <CardDescription className='text-gray-700'>{service.description}</CardDescription>
             </CardContent>
           </Card>
         ))}
